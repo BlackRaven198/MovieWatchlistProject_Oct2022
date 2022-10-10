@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Containers  */
+.container-main{
+    border: solid 1px red;
+    width: 550px;
+    height: 779px;
+    margin: auto;
+}
+.container-header{
+    border: solid 1px blue;
+    background-color: lightblue;
+    width: 100%;
+    height: 208px;
+}
+.container-body{
+    border: solid 1px rgb(61, 240, 61);
+    height: 571px;
+}
+
+.container-title{
+    color: white;
+    height: 208px;
+    background-image:url("./images/MovieSigns.jpg");
+    background-size: cover;
+   
+}
+.container-title::after{
+    position: inline;
+    background-color: rgba(0,0,0,0.25);
+    content: "";
+    
+    /* top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px; */
+    width: 100%;
+    height: 100%;
+}
+.container-search-bar{
+    display: flex;
+    justify-content: center;
+}
+
+/* Header */
+/* Search Bar */
+#search-bar{
+    position: relative;
+    top: -10px;
+    margin-right: -5px; 
+}
+#search-bar-btn{
+    position: relative;
+    top: -10px;
+    margin-left: 0px;  
+}
+
+#title-text{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: 25%;
+    vertical-align: middle;
+    padding: 30px;
+}
+
+
+
+/* Body style */
+
+#placeholder-icon{
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 50%;
+    padding-top: 0px;
+}
+#placeholder-img{
+    max-width: 100px;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+/* Movie Card Styling */
+
+.movie-card{
+    display: flex;
+
+    
+}
+/*Movie card left container*/
+.card-left{
+    display: flex;
+    align-items: center;
+    
+    
+}
+#card-left-img{
+    width: 70%;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+/* Movie Card Right Container */
+.card-right{
+    width: 100%;
+   
+}
+.card-title{
+    display: flex;
+}
+.card-title h3, p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.card-runtime-genre-add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-runtime-genre-add p, a {
+    font-size: .9rem;
+    text-align: center;   
+}
+/* get rid of the left padding from the runtime section */
+#card-runtime{ 
+    padding-left: 0;
+}
+
+#border-bottom{
+    width: 90%;
+    border-bottom:3px solid rgb(212, 207, 207);
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+
+/* .container-movie-card {
+    display: flex;
+    justify-content: center;
+    border-bottom: 4px solid rgb(171, 182, 193);
+}
+#movie-card {
+    height: 157px;
+    width: 472px;
+    background-color: lightgrey;
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+#movie-card-poster-img{
+    max-width: 100%;
+}
+#movie-card-title{
+    
+} */
