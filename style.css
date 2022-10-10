@@ -12,10 +12,24 @@ body{
     margin: auto;
 }
 .container-header{
+    position: relative;
     border: solid 1px blue;
-    background-color: lightblue;
+    background-color: rgb(43, 45, 46);
     width: 100%;
     height: 208px;
+}
+/* Create a background image that has opacity */
+.container-header::before{
+    content: '';
+    background-image: url(./images/MovieSigns.jpg);
+    filter: grayscale(100%);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
 }
 .container-body{
     border: solid 1px rgb(61, 240, 61);
@@ -25,22 +39,9 @@ body{
 .container-title{
     color: white;
     height: 208px;
-    background-image:url("./images/MovieSigns.jpg");
-    background-size: cover;
-   
+    opacity: 1;   
 }
-.container-title::after{
-    position: inline;
-    background-color: rgba(0,0,0,0.25);
-    content: "";
-    
-    /* top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px; */
-    width: 100%;
-    height: 100%;
-}
+
 .container-search-bar{
     display: flex;
     justify-content: center;
@@ -59,15 +60,19 @@ body{
     margin-left: 0px;  
 }
 
-#title-text{
+.title-text{
     display: inline-block;
     text-align: center;
     position: relative;
     top: 25%;
     vertical-align: middle;
     padding: 30px;
-}
 
+}
+#watchlist-link{
+    font-size: 1.25;
+    font-weight: 600;
+}
 
 
 /* Body style */

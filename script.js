@@ -40,7 +40,7 @@ searchBtn.addEventListener('click', () => {
     console.log(input)
     fetch(`http://www.omdbapi.com/?t=${ input }&apikey=da1b8236`)
         .then(res => res.json())
-        .then(data => handleData(data))
+        .then(data => handleData(data) & printMovieData(data))
 })
 //callback function that runs inside of search click  
 let handleData = (data) => { console.log(data.title)}
